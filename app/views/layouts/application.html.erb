@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TogetherIllumination</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Chichi</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<header>
+  <div class='header-logo'>
+    <%= link_to '二人イルミネーション', '/' %>
+  </div>
+  <ul class='header-menus'>
+    <li>
+      <%= link_to "二人イルミネーションとは", '/about' %>
+    </li>
+    <li>
+      <%= link_to 'ユーザー一覧', '/rooms' %>
+    </li>
+    <% if user_signed_in? %>
+      <li>
+        <%= link_to 'mypage', '/mypage' %>
+      </li>
+      <li>
+        <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+      </li>
+    <% else %>
+      <li>
+        <%= link_to 'sign up', new_user_registration_path %>
+      </li>
+      <li>
+        <%= link_to 'login', new_user_session_path %>
+      </li>
+    <% end%>
+    </li>
+</header>
+
+<% if flash[:notice]%>
+  <div class='flash'>
+    <%= flash[:notice] %>
+  </div>
+<% elsif flash[:error_message]%>
+  <div class='error-flash'>
+    <%= flash[:error_message] %>
+  </div>
+<% end %>
+
+<p class='alert'><%= alert %></p>
+<%= yield %>
+</body>
 </html>
+
