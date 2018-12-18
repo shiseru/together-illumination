@@ -1,19 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="main">
+  <div class="container">
+    <p>
+      <strong>Chat Room: here you can chat!</strong>
+    </p>
+    <p>
+      <strong>Owner user id:</strong>
+      <%= @room.owner_id %>
+    </p>
 
-<p>
-  <strong>Owner:</strong>
-  <%= @room.owner_id %>
-</p>
+    <p>
+      <strong>Participant user id:</strong>
+      <%= @room.participant_id %>
+    </p>
 
-<p>
-  <strong>Participant:</strong>
-  <%= @room.participant_id %>
-</p>
+    <%# get message from _render %>
+    <%#= render @messages %>
 
-<p>
-  <strong>Post:</strong>
-  <%= @room.post %>
-</p>
-
-<%= link_to 'Edit', edit_room_path(@room) %> |
-<%= link_to 'Back', rooms_path %>
+    <%= link_to 'Back to top', '/' %>
+  </div>
+  <%= form_tag("/rooms/#{@room.id}/create_message") do %>
+  <div class="form">
+    <div class="form-body">
+      <textarea name="content"></textarea>
+      <input type="submit" value= "post">
+    </div>
+  </div>
+  <% end %>
+</div>
