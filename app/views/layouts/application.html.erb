@@ -12,14 +12,14 @@
 <body>
 <header>
   <div class='header-logo'>
-    <%= link_to '二人イルミネーション', '/' %>
+    <%= link_to 'Together', '/' %>
   </div>
   <ul class='header-menus'>
     <li>
-      <%= link_to "二人イルミネーションとは", '/about' %>
+      <%= link_to 'posts', '/posts' %>
     </li>
     <li>
-      <%= link_to 'ユーザー一覧', '/rooms' %>
+      <%= link_to "about", '/about' %>
     </li>
     <% if user_signed_in? %>
       <li>

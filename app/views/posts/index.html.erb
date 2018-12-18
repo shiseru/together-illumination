@@ -2,8 +2,8 @@
   <div class="container">
     Click Item to see details
     <% @posts.each do |post| %>
-      <div class="posts-index-post">
-        <%= link_to("#{post.user} #{post.location} $", post) %>
+      <div class="posts-index-item">
+        <%= link_to("#{post.user.id} #{post.location}", post) %>
       </div>
     <% end %>
     <%= link_to 'Post New Item', new_post_path %>
