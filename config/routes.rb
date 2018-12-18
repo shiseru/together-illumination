@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :rooms
+  resources :posts
   devise_for :users
   get '/' => 'home#top'
   get 'home/show' => 'home#show'

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_id: 1
+  participant_id: 1
+  post: one
+
+two:
+  owner_id: 1
+  participant_id: 1
+  post: two
