@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76f66cd2-f639-4c59-a400-ea65c791588d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/room.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/room.rb" afterDir="false" />
-    </list>
+    <list default="true" id="76f66cd2-f639-4c59-a400-ea65c791588d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -57,7 +53,7 @@
           <entry key="css" value="589" />
           <entry key="erb" value="295" />
           <entry key="gitignore" value="1" />
-          <entry key="rb" value="807" />
+          <entry key="rb" value="812" />
           <entry key="scss" value="393" />
         </counts>
       </usages-collector>
@@ -66,7 +62,7 @@
           <entry key="CSS" value="589" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="295" />
-          <entry key="Ruby" value="807" />
+          <entry key="Ruby" value="812" />
           <entry key="SCSS" value="393" />
         </counts>
       </usages-collector>
@@ -83,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/room.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="234">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -137,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/rooms_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="149">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -209,8 +205,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="92" />
-    <option name="y" value="23" />
+    <option name="x" value="30" />
+    <option name="y" value="33" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -395,12 +391,12 @@
       <workItem from="1545037449493" duration="2053000" />
       <workItem from="1545044704444" duration="347000" />
       <workItem from="1545045428749" duration="3189000" />
-      <workItem from="1545113691583" duration="4159000" />
+      <workItem from="1545113691583" duration="4246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9748000" />
+    <option name="totallyTimeSpent" value="9835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,7 +416,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,7 +424,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4074074" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4074074" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32915717" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -591,17 +587,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/rooms_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/room.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="234">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/room.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/rooms_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="149">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
