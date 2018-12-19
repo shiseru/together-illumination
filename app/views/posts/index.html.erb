@@ -3,7 +3,15 @@
     Click Item to see details
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <%= link_to("#{post.user.id} #{post.location}", post) %>
+        <div class="post-left">
+          <img src="/blank-profile-picture-973460_960_720.png">
+        </div>
+        <div class="post-right">
+          <div class="post-user-name">
+            <%= link_to("#{post.user.id} #{post.location}", post) %>
+          </div>
+          <%= link_to(post.content, "/posts/#{post.id}") %>
+        </div>
       </div>
     <% end %>
     <%= link_to 'Post New Item', new_post_path %>
