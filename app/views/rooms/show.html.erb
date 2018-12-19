@@ -21,21 +21,18 @@
     <%= link_to 'Back to top', '/' %>
   </div>
   <%#= form_tag("/rooms/#{@room.id}/create_message") do %>
-<!--  <div class="form">-->
-<!--    <div class="form-body">-->
+  <div class="form">
+    <div class="form-body">
+      <form>
 <!--      <textarea name="content"></textarea>-->
-<!--      <input type="submit" value= "post">-->
-<!--    </div>-->
-<!--  </div>-->
+<!--      <input type="submit" class="js-content'" value= "post">-->
+        <input name='content' type="text" class="js-content" data-behavior="room_speaker">
+      </form>
+    </div>
+  </div>
   <%# end %>
-  <form>
-    <label>Room_id</label>
-    <input type="text" class="js-room" value="部屋id">
-    <br>
-    <label>名前</label>
-    <input type="text" class="js-name" value="名無子">
-    <br>
-    <label>内容</label>
-    <input type="text" class="js-content" data-behavior="room_speaker">
-  </form>
+<!--  <form>-->
+<!--    <label>内容</label>-->
+<!--    <input type="text" class="js-content" data-behavior="room_speaker">-->
+<!--  </form>-->
 </div>
