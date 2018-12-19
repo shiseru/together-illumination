@@ -11,6 +11,9 @@ class RoomsController < ApplicationController
   # GET /rooms/1.json
   def show
     room = Room.find(params[:id])
+    gon.room_id = params[:id]
+    gon.user_id = current_user.id
+
     if room.is_authorized?(current_user.id) then
       @messages = Message.where(room_id: params[:id]).order(created_at: :asc)
     else

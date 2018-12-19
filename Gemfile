@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
+# Send rails variable to JS file
+gem 'gon'
 # Enable Jquery
 gem 'jquery-rails'
 # Use devise for user registration
