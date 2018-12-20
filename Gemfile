@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
+# scrape the illumination information in Tokyo
+gem 'mechanize'
 # Send rails variable to JS file
 gem 'gon'
 # Enable Jquery

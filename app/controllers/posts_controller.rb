@@ -15,6 +15,10 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    # fetch illumination data in Tokyo
+    agent = Mechanize.new
+    page = agent.get('https://sp.jorudan.co.jp/illumi/tokyo.html')
+    @elements = page.search('.item h3')
   end
 
   # GET /posts/1/edit

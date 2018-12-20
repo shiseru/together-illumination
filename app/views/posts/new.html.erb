@@ -3,3 +3,7 @@
 <%= render 'form', post: @post %>
 
 <%= link_to 'Back', posts_path %>
+
+<% @elements.each do |element|%>
+  <p><%= element.inner_text%></p>
+<%end%>
