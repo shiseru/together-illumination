@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :users
   resources :rooms#, only: [:show, :destroy]
   post 'rooms/:id/create_message' => 'rooms#create_message'
