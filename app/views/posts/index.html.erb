@@ -1,6 +1,6 @@
 <div class="main">
   <div class="container">
-    Click Item to see details
+    みんなの投稿
     <% @posts.each do |post| %>
       <div class="posts-index-item">
         <div class="post-left">
@@ -12,6 +12,13 @@
           </div>
           <%= link_to(post.content, "/posts/#{post.id}") %>
         </div>
+        <%if post.id == current_user.id%>
+          <%= link_to '投稿を編集する', edit_post_path(post) %>
+        <% else%>
+          <%= link_to("rooms/#{post.user_id}/#{current_user.id}/#{post.id}/create", {method:"post"}) do %>
+          <button>チャットする</button>
+        <% end %>
+      <%end %>
       </div>
     <% end %>
     <%= link_to 'Post New Item', new_post_path %>

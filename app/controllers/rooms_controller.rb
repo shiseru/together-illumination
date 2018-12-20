@@ -33,16 +33,22 @@ class RoomsController < ApplicationController
   # POST /rooms
   # POST /rooms.json
   def create
-    @room = Room.new(room_params)
+    owner_id = params[:owner_id]
+    participant_id = params[:participant_id]
+    post_id = params[:post_id]
 
-    respond_to do |format|
-      if @room.save
-        format.html { redirect_to @room, notice: 'Room was successfully created.' }
+    @room = Room.new(owner_id: owner_id, participant_id: participant_id, post_id: post_id)
+
+    if @room.save then
+      respond_to do |format|
+        format.html { redirect_to @room, notice: 'チャットしましょう!' }
         format.json { render :show, status: :created, location: @room }
-      else
-        format.html { render :new }
-        format.json { render json: @room.errors, status: :unprocessable_entity }
       end
+    else
+      flash[:error_message] = 'このユーザーとはすでにチャット中です！'
+      @room = Room.where(["owner_id = ? and participant_id = ?", owner_id, current_user.id])
+      redirect_to("/rooms/#{@room.ids[0]}")
+
     end
   end
 

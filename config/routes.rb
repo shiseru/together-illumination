@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :rooms#, only: [:show, :destroy]
   post 'rooms/:id/create_message' => 'rooms#create_message'
+  post 'rooms/:owner_id/:participant_id/:post_id/create' => 'rooms#create'
+
   resources :posts
   get '/' => 'home#top'
   get 'home/show' => 'home#show'
