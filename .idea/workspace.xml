@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76f66cd2-f639-4c59-a400-ea65c791588d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -63,7 +60,7 @@
           <entry key="Gemfile" value="166" />
           <entry key="coffee" value="627" />
           <entry key="css" value="589" />
-          <entry key="erb" value="3723" />
+          <entry key="erb" value="3748" />
           <entry key="gitignore" value="1" />
           <entry key="js" value="27" />
           <entry key="rb" value="2624" />
@@ -76,7 +73,7 @@
           <entry key="CoffeeScript" value="627" />
           <entry key="JavaScript" value="27" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RHTML" value="3723" />
+          <entry key="RHTML" value="3748" />
           <entry key="Ruby" value="2790" />
           <entry key="SCSS" value="439" />
         </counts>
@@ -144,8 +141,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="650">
-                  <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+                <state relative-caret-position="279">
+                  <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -532,7 +529,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22918000" />
+    <option name="totallyTimeSpent" value="23000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,8 +557,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2788671" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" visible="true" weight="0.2788671" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" visible="true" weight="0.2788671" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32915717" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -827,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="279">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
     </entry>
