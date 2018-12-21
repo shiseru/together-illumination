@@ -1,5 +1,6 @@
 <div class="main">
   <div class="container">
+
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
       <div class="field">
@@ -23,6 +24,12 @@
       <div class="field">
         <%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+      <%= f.label :Image %><br />
+      <%= f.file_field :avatar %>
+      <%= f.hidden_field :avatar_cache %>
       </div>
 
       <div class="actions">

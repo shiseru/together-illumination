@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
+# upload image to user profile
+gem 'carrierwave'
+gem 'mini_magick'
 # Add admin page for developers
 gem 'activeadmin'
 # Scrape the illumination information in Tokyo
