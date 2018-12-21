@@ -1,9 +1,50 @@
+<div class="main">
+<div class="container">
 <h1>New Post</h1>
 
-<%= render 'form', post: @post %>
 
-<%= link_to 'Back', posts_path %>
+<%= form_with(model: @post, local: true) do |form| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-<% @elements.each do |element|%>
-  <p><%= element.inner_text%></p>
-<%end%>
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+      <%= form.label :content %>
+      <%= form.text_area :content %>
+    </div>
+
+    <div class="field">
+      <%= form.label :location %>
+      <%= form.text_field :location %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+
+    <%= link_to 'Back', posts_path %>
+    
+    <p>Location：<br>
+    <select name="Location">
+    <% @elements.each do |element|%>
+      <option value="#{element.inner_text}"><%= element.inner_text%></option>
+    <%end%>
+    </select>
+    </p>
+
+</div>
+</div>
+<% end %>
+
+
+
+
+
