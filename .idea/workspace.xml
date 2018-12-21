@@ -64,7 +64,7 @@
           <entry key="erb" value="4118" />
           <entry key="gitignore" value="1" />
           <entry key="js" value="27" />
-          <entry key="rb" value="5392" />
+          <entry key="rb" value="5400" />
           <entry key="scss" value="439" />
         </counts>
       </usages-collector>
@@ -75,7 +75,7 @@
           <entry key="JavaScript" value="27" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="4118" />
-          <entry key="Ruby" value="5667" />
+          <entry key="Ruby" value="5675" />
           <entry key="SCSS" value="439" />
         </counts>
       </usages-collector>
@@ -134,7 +134,7 @@
             <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="208">
-                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
                 </state>
               </provider>
             </entry>
@@ -246,7 +246,7 @@
             <entry file="file://$PROJECT_DIR$/app/controllers/illuminations_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="358">
-                  <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+                  <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -484,7 +484,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33897000" />
+    <option name="totallyTimeSpent" value="34023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,7 +778,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -820,7 +820,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/illuminations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>

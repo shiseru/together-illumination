@@ -9,7 +9,7 @@ class IlluminationsController < ApplicationController
     # end
     # ActiveRecord::Base.connection.execute('TRUNCATE TABLE `Illumination`')
     # fetch illumination in Tokyo city
-    # if current_user.id == 1 then
+    if current_user.id == 1 then
       agent = Mechanize.new
       page = agent.get('https://sp.jorudan.co.jp/illumi/tokyo.html')
       elements = page.search('.item h3')
@@ -18,7 +18,7 @@ class IlluminationsController < ApplicationController
         illumination = Illumination.new(name: element.inner_text)
         illumination.save
       end
-    # end
+    end
     redirect_back(fallback_location: root_path)
   end
 end
