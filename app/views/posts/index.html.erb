@@ -1,17 +1,5 @@
 <div class="main">
   <div class="container">
-  <div class="cp_ipselect">
-  <select class="cp_sl06" required>
-  <option value="" hidden disabled selected></option> 
-  <% @illuminations.each do |illumination|%>
-    <option value="#{illumination}"><%= illumination.name%></option>
-  <%end%>
-  </select>
-  <span class="cp_sl06_highlight"></span>
-  <span class="cp_sl06_selectbar"></span>
-  <label class="cp_sl06_selectlabel">Choose Location</label>
-  </div>
-  </p><br>
     みんなの投稿
     <% @posts.each do |post| %>
       <div class="posts-index-item">
@@ -24,14 +12,14 @@
           </div>
           <%= link_to(post.content, "/posts/#{post.id}") %>
         </div>
-<!--        投稿に返信することでルームが作られる-->
-        <%if post.id == current_user.id%>        
+        <!--        投稿に返信することでルームが作られる-->
+        <%if post.id == current_user.id%>
           <%= button_to "Customer Information", edit_post_path(post), method: :get, class: "postButton" %>
         <% else%>
-          <%= button_to "チャットする", "rooms/#{post.user_id}/#{current_user.id}/#{post.id}/create", method: :post, class: "postButton" %>
-          <%= link_to("rooms/#{post.user_id}/#{current_user.id}/#{post.id}/create", {method:"post"}) do %>
-        <% end %>
-      <%end %>
+          <%#= button_to "チャットする#{post.user_id}", "rooms/#{post.user_id}/#{current_user.id}/#{post.id}/create", method: :post, class: "postButton" %>
+          <%= link_to('チャットする', "rooms/#{post.user_id}/#{current_user.id}/#{post.id}/create", {method:"post"})%>
+          <%# end %>
+        <%end %>
       </div>
     <% end %>
     <%= link_to 'Post New Item', new_post_path %>

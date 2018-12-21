@@ -11,11 +11,11 @@ class RoomsController < ApplicationController
   # GET /rooms/1
   # GET /rooms/1.json
   def show
-    room = Room.find(params[:id])
+    @room = Room.find(params[:id])
     gon.room_id = params[:id]
     gon.user_id = current_user.id
 
-    if room.is_authorized?(current_user.id) then
+    if @room.is_authorized?(current_user.id) then
       @messages = Message.where(room_id: params[:id]).order(created_at: :asc)
     else
       raise ActionController::RoutingError.new('Not Found')
@@ -46,8 +46,8 @@ class RoomsController < ApplicationController
         format.json { render :show, status: :created, location: @room }
       end
     else
-      flash[:error_message] = 'このユーザーとはすでにチャット中です！'
-      @room = Room.where(["owner_id = ? and participant_id = ?", owner_id, current_user.id])
+      # flash[:error_message] = 'このユーザーとはすでにチャット中です！'
+      # @room = Room.where(["owner_id = ? and participant_id = ?", owner_id, current_user.id])
       redirect_to("/rooms/#{@room.ids[0]}")
 
     end

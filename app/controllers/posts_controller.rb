@@ -1,12 +1,11 @@
 class PostsController < ApplicationController
-  # before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: :index
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  # before_action :authenticate_user!, except: :index
 
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
-    @illuminations = Illumination.all
   end
 
   # GET /posts/1
@@ -17,8 +16,6 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
-    # fetch illumination data in Tokyo
-    @illuminations = Illumination.all
   end
 
   # GET /posts/1/edit
@@ -28,31 +25,31 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    # @post = Post.new(post_params)
-    #
-    # respond_to do |format|
-    #   if @post.save
-    #     format.html { redirect_to @post, notice: 'Post was successfully created.' }
-    #     format.json { render :show, status: :created, location: @post }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @post.errors, status: :unprocessable_entity }
-    #   end
-    # end
+    @post = Post.new(post_params)
 
-    @post = Post.new(user_id: current_user.id,
-                     content: params[:content],
-                     location: params[:location])
-    if @post.save then
-      respond_to do |format|
-        format.html { redirect_to '/posts', notice: '投稿に成功しました！' }
+    respond_to do |format|
+      if @post.save
+        format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
+      else
+        format.html { render :new }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
       end
-    else
-      flash[:error_message] = 'エラー！投稿できませんでした、、'
-      redirect_to('/posts')
-
     end
+
+    # @post = Post.new(user_id: current_user.id,
+    #                  content: params[:content],
+    #                  location: params[:location])
+    # if @post.save then
+    #   respond_to do |format|
+    #     format.html { redirect_to '/posts', notice: '投稿に成功しました！' }
+    #     format.json { render :show, status: :created, location: @post }
+    #   end
+    # else
+    #   flash[:error_message] = 'エラー！投稿できませんでした、、'
+    #   redirect_to('/posts')
+    #
+    # end
 
   end
 

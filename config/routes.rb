@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
 
-  resources :rooms, only: [:show, :destroy]
-  post 'rooms/:id/create_message' => 'rooms#create_message'
-  post 'rooms/:owner_id/:participant_id/:post_id/create' => 'rooms#create'
+  post '/rooms/:id/create_message' => 'rooms#create_message'
+  post '/rooms/:owner_id/:participant_id/:post_id/create' => 'rooms#create'
+  resources :rooms
 
   resources :posts
 
