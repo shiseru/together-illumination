@@ -13,13 +13,12 @@
           <%= link_to(post.content, "/posts/#{post.id}") %>
         </div>
 <!--        投稿に返信することでルームが作られる-->
-        <%if post.id == current_user.id%>
-          <%= link_to '投稿を編集する', edit_post_path(post) %>
+        <%if post.id == current_user.id%>        
+          <%= button_to "Customer Information", edit_post_path(post), method: :get, class: "postButton" %>
         <% else%>
+          <%= button_to "チャットする", "rooms/#{post.user_id}/#{current_user.id}/#{post.id}/create", method: :post, class: "postButton" %>
           <%= link_to("rooms/#{post.user_id}/#{current_user.id}/#{post.id}/create", {method:"post"}) do %>
-          <button>チャットする</button>
         <% end %>
-
       <%end %>
       </div>
     <% end %>
