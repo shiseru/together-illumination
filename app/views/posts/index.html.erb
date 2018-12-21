@@ -21,7 +21,7 @@
         </div>
         <div class="post-right">
           <div class="post-user-name">
-            <%= link_to("#{post.user.id} #{post.location}", post) %>
+            <%= link_to("#{post.user.username} #{post.location}", post) %>
           </div>
           <%= link_to(post.content, "/posts/#{post.id}") %>
         </div>
