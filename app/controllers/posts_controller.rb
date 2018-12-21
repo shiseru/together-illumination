@@ -16,6 +16,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     # fetch illumination data in Tokyo
+    @illuminations = Illumination.all
   end
 
   # GET /posts/1/edit

@@ -34,8 +34,8 @@
     
     <p>Location：<br>
     <select name="Location">
-    <% @elements.each do |element|%>
-      <option value="#{element.inner_text}"><%= element.inner_text%></option>
+    <% @illuminations.each do |illumination|%>
+      <option value="#{illumination}"><%= illumination.name%></option>
     <%end%>
     </select>
     </p>
