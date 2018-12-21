@@ -21,30 +21,29 @@
       <%= form.text_area :content %>
     </div>
 
-    <div class="field">
-      <%= form.label :location %>
-      <%= form.text_field :location %>
-    </div>
+<!--    <div class="field">-->
+      <%#= form.label :location %>
+      <%#= form.text_field :location %>
+<!--    </div>-->
 
-    <div class="actions">
-      <%= form.submit %>
-    </div>
 
-    <%= link_to 'Back', posts_path %>
-    
     <p>Location：<br>
     <select name="Location">
     <% @illuminations.each do |illumination|%>
       <option value="#{illumination}"><%= illumination.name%></option>
+      <%#= form :location %>
     <%end%>
     </select>
     </p>
 
-</div>
+    <%= link_to 'Back', posts_path %>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+    <%#= link_to("rooms/#{@item.user_id}/#{current_user.id}/create", {method:"post"}) do %>
+<!--      <button>投稿する!</button>-->
+    <%# end %>
+  </div>
 </div>
 <% end %>
-
-
-
-
-
