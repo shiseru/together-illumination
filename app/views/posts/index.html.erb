@@ -1,11 +1,16 @@
 <div class="main">
   <div class="container">
-  <p>Location：<br>
-  <select name="Location">
+  <div class="cp_ipselect">
+  <select class="cp_sl06" required>
+  <option value="" hidden disabled selected></option> 
   <% @illuminations.each do |illumination|%>
     <option value="#{illumination}"><%= illumination.name%></option>
   <%end%>
   </select>
+  <span class="cp_sl06_highlight"></span>
+  <span class="cp_sl06_selectbar"></span>
+  <label class="cp_sl06_selectlabel">Choose Location</label>
+  </div>
   </p><br>
     みんなの投稿
     <% @posts.each do |post| %>
