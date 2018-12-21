@@ -1,5 +1,12 @@
 <div class="main">
   <div class="container">
+  <p>Location：<br>
+  <select name="Location">
+  <% @illuminations.each do |illumination|%>
+    <option value="#{illumination}"><%= illumination.name%></option>
+  <%end%>
+  </select>
+  </p><br>
     みんなの投稿
     <% @posts.each do |post| %>
       <div class="posts-index-item">
