@@ -6,9 +6,10 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @illuminations = Illumination.all
   end
 
-  # GET /posts/1
+  # GET /posts/
   # GET /posts/1.json
   def show
   end
@@ -16,6 +17,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    @illuminations = Illumination.all
   end
 
   # GET /posts/1/edit
