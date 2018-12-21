@@ -5,10 +5,10 @@ class Room < ApplicationRecord
 
   has_many :messages
 
-  validates :owner_id, uniqueness: {
-      scope: [:participant_id, :post_id],
-      allow_nil: true,
-  }
+  # validates :owner_id, uniqueness: {
+  #     scope: [:participant_id, :post_id],
+  #     allow_nil: true,
+  # }
 
   def is_authorized?(user_id)
     return owner_id == user_id || participant_id == user_id
