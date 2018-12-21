@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @illuminations = Illumination.all
   end
 
   # GET /posts/1
