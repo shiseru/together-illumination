@@ -4,6 +4,8 @@
 
 https://togetherillumination.herokuapp.com/
 
+* If you see errors, please log in to the service!!
+
 Real chat illumination matching service offered in Tokyo.
 
 Users choose which illumination they want to visit. Then, the service matches the other people who want to visit the same illumination.
